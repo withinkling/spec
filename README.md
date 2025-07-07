@@ -1,6 +1,6 @@
 # Inkling Script Language
 
-Inkling is a scripting language based on [Ink](https://www.inklestudios.com/ink/) by Inkle Studios. While it has similar syntax, the features it provides are much more limited to those of Ink as Inkling was originally designed as a way to write interactive text message conversations that could be pasted into HTML editors on fan fiction sites.
+Inkling is a scripting language inspired by [Ink](https://www.inklestudios.com/ink/) by Inkle Studios. While it has similar syntax, the features it provides are much more limited to those of Ink as Inkling was originally designed as a way to write interactive text message conversations that could be pasted into HTML editors on fan fiction sites.
 
 ## Writing your script
 
@@ -102,6 +102,14 @@ But what if we want to have a group chat?
 We've added to the initial symbols that can be used. You have already seen `>` and `<` but we've now introduced labeling. Labeling allows for simple names to be added to messages, much like in a group chat. This means that a name like `>:Ultron The Agressor Implicator Of All Expediter Of Shipping` Will become `Ultron`.
 
 > This is likely to change in the future
+
+## Differences From Ink
+
+Ink is a fully featured language that allows for things like variables, cycling through options, including multiple files to create one cohesive compiled final product, or returning to an option set multiple time.
+
+Inkling is not designed for multi-file project, does not keep track of variables, does not allow for returning to previously selected options, cannot cycle through text randomly.
+
+This is why we say that Inkling is inspired by Ink and has a lot of syntactical similarities.
 
 ## Symbol Table
 
