@@ -134,6 +134,21 @@ We've added to the initial symbols that can be used. You have already seen `>` a
 >:Maria This is incorrect since it will think this whole string is the name
 ```
 
+There might be information you use through out your work that you want to keep on hand. This can be anything you want it to be, but ultimately it will be coerced into a string.
+
+```
+~ mc_age = 23
+~ mc_name = Jeremiah Berbiglia Bartholomew Longname
+> Wait {mc_name}, how old are you again?
+< I'm {mc_age}
+```
+
+Variables act as constants that can be interpolated into your work. There is no way to modify them over the course of a story. It is also not possible to derive or calculate the value of a variable during assignment.
+
+```
+~ mc_age = 21 + 5 # invalid
+```
+
 ## Differences From Ink
 
 Ink is a fully featured language that allows for things like variables, cycling through options, including multiple files to create one cohesive compiled final product, or returning to an option set multiple time. You can use knots and stitches to organize sections and subsections of text. You can use `-> section_id` to send the reader to a specific knot/stitch.
