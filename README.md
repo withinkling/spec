@@ -79,6 +79,31 @@ Well, forget you then!
 
 Inkling doesn't worry whether it has been sent to the end of a script or not. If there are no options, then the script is over.
 
+You might want to leave yourself some comments though, just so you don't lose your place!
+
+```
+= start
+Hey there!
+
+- What's up? -> text_1
+- I was just thinking about you! -> textTwo
+- Oh great, you again -> text-3
+
+# What a milque toast response
+= text_1
+Not much!
+
+# This is the good out come
+= textTwo
+Really? I'm blushing!
+
+# They blew it
+= text-3
+Well, forget you then!
+```
+
+Start a line with a `#` and that line will be ignored by the compiler. Currently inline comments or comments at the end of lines are not supported.
+
 But what if we want to have a group chat?
 
 ```
