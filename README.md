@@ -83,27 +83,31 @@ But what if we want to have a group chat?
 
 ```
 = start
->:Maria Hey y'all!
->:Jane Sup
->:Elizabeth How are you today?
+>:Maria: Hey y'all!
+>:Jane: Sup
+>:Elizabeth: How are you today?
 
 - Fine, chemistry is kicking my butt though -> A
 - Ugh, regretting not studying -> B
 
 = A
->:Elizabeth Agreed, what is a mole anyways?
->:Jane It's mol you clod!
+>:Elizabeth: Agreed, what is a mole anyways?
+>:Jane: It's mol you clod!
 < Don't call her a clod
 
 = B
->:Maria We should have a study slumber party!
->:Jane I'd rather sleep in my own bed, thank you
+>:Maria: We should have a study slumber party!
+>:Jane: I'd rather sleep in my own bed, thank you
 < Agreed
 ```
 
-We've added to the initial symbols that can be used. You have already seen `>` and `<` but we've now introduced labeling. Labeling allows for simple names to be added to messages, much like in a group chat. This means that a name like `>:Ultron The Agressor Implicator Of All Expediter Of Shipping` Will become `Ultron`.
+We've added to the initial symbols that can be used. You have already seen `>` and `<` but we've now introduced labeling. Labeling allows for assigning names to a given sender. Simply mark it as a received text `>` Then add the name wrapped in `:` colons.
 
-> This is likely to change in the future
+```
+>:Jane: Like this
+>:Elizabeth's Whole Name Is Longer: This technically works, but is a hassle.
+>:Maria This is incorrect since it will think this whole string is the name
+```
 
 ## Differences From Ink
 
@@ -120,6 +124,6 @@ This is why we say that Inkling is inspired by Ink and has a lot of syntactical 
 | =      | Marks the start of a section. Must be followed by a unique string that does not contain spaces        | `= section_id`                                         |
 | >      | Marks a line of text as being received                                                                | `> Hey John, it's martha`                              |
 | <      | Marks a line of text as being sent                                                                    | `< Good to hear from you martha`                       |
-| >:     | Marks a line of text as being received but is followed by a name                                      | `>:Jimothy I don't need to tell you my name`           |
+| >:name:     | Marks a line of text as being received but is followed by a name                                      | `>:Jimothy: I don't need to tell you my name`           |
 | -      | Creates an option, must have a `->` destination selector and a valid section id after the option text | `- Who added Jimothy`            |
 | ->     | Marks the destination an option will lead to, must be followed by a valid section id                  | `- I forgot I added you -> removeJimothyFromGroupChat` |
