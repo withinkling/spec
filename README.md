@@ -134,6 +134,29 @@ We've added to the initial symbols that can be used. You have already seen `>` a
 >:Maria This is incorrect since it will think this whole string is the name
 ```
 
+You can set the owner name by adding it to the end of the `= start` signifier
+
+```
+= start:Ellen:
+>:Maria: Hey y'all!
+>:Jane: Sup
+>:Elizabeth: How are you today?
+
+- Fine, chemistry is kicking my butt though -> A
+- Ugh, regretting not studying -> B
+
+= A
+>:Elizabeth: Agreed, what is a mole anyways?
+>:Jane: It's mol you clod!
+< Don't call her a clod
+
+= B
+>:Maria: We should have a study slumber party!
+>:Jane: I'd rather sleep in my own bed, thank you
+< Agreed
+```
+This will mark any messages with a `<` or options selected with that name after the `= start` signifier and between two `:`
+
 There might be information you use through out your work that you want to keep on hand. This can be anything you want it to be, but ultimately it will be coerced into a string.
 
 ```
