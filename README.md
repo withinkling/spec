@@ -105,9 +105,9 @@ We've added to the initial symbols that can be used. You have already seen `>` a
 
 ## Differences From Ink
 
-Ink is a fully featured language that allows for things like variables, cycling through options, including multiple files to create one cohesive compiled final product, or returning to an option set multiple time.
+Ink is a fully featured language that allows for things like variables, cycling through options, including multiple files to create one cohesive compiled final product, or returning to an option set multiple time. You can use knots and stitches to organize sections and subsections of text.
 
-Inkling is not designed for multi-file project, does not keep track of variables, does not allow for returning to previously selected options, cannot cycle through text randomly.
+Inkling is not designed for multi-file project, does not keep track of variables, does not allow for returning to previously selected options, cannot cycle through text randomly. While it has the concept of sectioning text, it does not support the `knot.stitch` dot notation or have a `=== knot name ===` equivalent. There are only stitches.
 
 This is why we say that Inkling is inspired by Ink and has a lot of syntactical similarities.
 
