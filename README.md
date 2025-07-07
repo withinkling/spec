@@ -2,6 +2,8 @@
 
 Inkling is a scripting language inspired by [Ink](https://www.inklestudios.com/ink/) by Inkle Studios. While it has similar syntax, the features it provides are much more limited to those of Ink as Inkling was originally designed as a way to write interactive text message conversations that could be pasted into HTML editors on fan fiction sites.
 
+[See it in action here](https://codepen.io/gingerchew/pen/myJNaZM/91484ea1b7bfed643b4683753950177e)
+
 ## Writing your script
 
 > For the purposes of demonstrating everything Inkling does, we will assume you are writing an interactive fic that uses text messages as the plot delivery device.
