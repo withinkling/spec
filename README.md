@@ -10,7 +10,7 @@ Inkling is a scripting language inspired by [Ink](https://www.inklestudios.com/i
 
 Every Inkling script starts the same way:
 
-```
+```ink
 = start
 ```
 
@@ -18,7 +18,7 @@ Every Inkling script starts the same way:
 
 Next, have someone say something:
 
-```
+```ink
 = start
 Hey there!
 ```
@@ -27,7 +27,7 @@ Every line that doesn't have a symbol in front of it will be treated as a second
 
 We should respond:
 
-```
+```ink
 = start
 Hey there!
 
@@ -37,7 +37,7 @@ Hey there!
 
 By starting a line with a `-` this tells Inkling you are creating an option. If you want to have the owner write a message without an option, start a line of text with a `<` character.
 
-```
+```ink
 = start
 Hey there!
 < Hey!
@@ -47,7 +47,7 @@ Hey there!
 ```
 Options are nothing without a destination though. Those can be chosen by adding `-> {section_id}` after the option text.
 
-```
+```ink
 = start
 Hey there!
 
@@ -59,7 +59,7 @@ Hey there!
 Section IDs only have two requirements, first they must not contain spaces, second they must be unique.
 Notice how the section IDs accept pascal, camel, and kebab case? You can name your sections anything you want, but they cannot include spaces. You can name your sections something simple, like `A` or `next`, but it would benefit you to be a bit more verbose depending on the length of your script. Now that we have our options and our destinations, let's add to the conversation.
 
-```
+```ink
 = start
 Hey there!
 
@@ -81,7 +81,7 @@ Inkling doesn't worry whether it has been sent to the end of a script or not. If
 
 You might want to leave yourself some comments though, just so you don't lose your place!
 
-```
+```ink
 = start
 Hey there!
 
@@ -106,7 +106,7 @@ Start a line with a `#` and that line will be ignored by the compiler. Currently
 
 But what if we want to have a group chat?
 
-```
+```ink
 = start
 >:Maria: Hey y'all!
 >:Jane: Sup
@@ -128,7 +128,7 @@ But what if we want to have a group chat?
 
 We've added to the initial symbols that can be used. You have already seen `>` and `<` but we've now introduced labeling. Labeling allows for assigning names to a given sender. Simply mark it as a received text `>` Then add the name wrapped in `:` colons.
 
-```
+```ink
 >:Jane: Like this
 >:Elizabeth's Whole Name Is Longer: This technically works, but is a hassle.
 >:Maria This is incorrect since it will think this whole string is the name
@@ -136,7 +136,7 @@ We've added to the initial symbols that can be used. You have already seen `>` a
 
 You can set the owner name by adding it to the end of the `= start` signifier
 
-```
+```ink
 = start:Ellen:
 >:Maria: Hey y'all!
 >:Jane: Sup
@@ -159,7 +159,7 @@ This will mark any messages with a `<` or options selected with that name after 
 
 There might be information you use through out your work that you want to keep on hand. This can be anything you want it to be, but ultimately it will be coerced into a string.
 
-```
+```ink
 ~ mc_age = 23
 ~ mc_name = Jeremiah Berbiglia Bartholomew Longname
 > Wait {mc_name}, how old are you again?
@@ -168,7 +168,7 @@ There might be information you use through out your work that you want to keep o
 
 Variables act as constants that can be interpolated into your work. There is no way to modify them over the course of a story. It is also not possible to derive or calculate the value of a variable during assignment.
 
-```
+```ink
 ~ mc_age = 21 + 5 # invalid
 ```
 
