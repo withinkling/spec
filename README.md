@@ -172,6 +172,30 @@ Variables act as constants that can be interpolated into your work. There is no 
 ~ mc_age = 21 + 5 # invalid
 ```
 
+You may want to have optional options. These are options that only show if the reader visits one part of the story tree.
+
+```ink
+= start
+- optionA -> A
+- optionB -> B
+
+= A
+This is message A
+- optionC -> C
+
+= B
+This is message B
+And it has specific information that you would only know if you got here
+
+- optionC -> C
+
+= C
+
+- optionD -> D
+# This will only show if the user has visited section B
+- {B} optionE -> E
+```
+
 ## Differences From Ink
 
 Ink is a fully featured language that allows for things like variables, cycling through options, including multiple files to create one cohesive compiled final product, or returning to an option set multiple time. You can use knots and stitches to organize sections and subsections of text. You can use `-> section_id` to send the reader to a specific knot/stitch.
